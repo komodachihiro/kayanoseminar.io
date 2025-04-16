@@ -116,7 +116,7 @@
                     <img class="speech-image" src="img/check.png" alt="チェック"> <!-- 吹き出し画像 -->
                 </div>
                 <div class="accordion-content" id="accordion-content">
-                    <button class="close-button" id="close-button">✖</button> <!-- 閉じるボタン -->
+                    <button class="close-button" id="closeBtn">✕</button> <!-- 閉じるボタン -->
                     <!-- アコーディオン内容 -->
 
                      <div class="image-container">
@@ -325,6 +325,22 @@
         }
     });
 });
+
+
+  const closeBtn = document.getElementById('closeBtn');
+  const accordion = document.getElementById('accordion');
+
+  closeBtn.addEventListener('click', () => {
+    accordion.classList.remove('open'); // 表示用クラスを外す
+    document.body.style.overflow = '';  // スクロール復活（画面固定してた場合）
+  });
+
+  const openBtn = document.getElementById('openAccordion');
+
+  openBtn.addEventListener('click', () => {
+    accordion.classList.add('open');       // 表示
+    document.body.style.overflow = 'hidden'; // 背景スクロール停止
+  });
 
 
 </script>

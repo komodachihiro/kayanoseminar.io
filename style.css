@@ -1,0 +1,1187 @@
+/* 全体のリセット */
+body, h1, h2,  p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全体のコンテナ設定 */
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央寄せ */
+}
+
+/* メインコンテンツのラッパー */
+.wrapper {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffffff;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    max-width: 390px;
+    height: 60px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.header {
+    display: flex; /* 追加 */
+    justify-content: space-between; /* 追加：左右に分ける */
+    align-items: flex-start; /* 追加：上揃え */
+    padding: 10px; /* 追加：余白をつける */
+}
+
+.header_box01 {
+    display: flex;
+    height: 40px;
+    align-items: center; /* 追加：縦方向の中央揃え */
+    gap: 10px; /* 追加：要素間の間隔 */
+    margin-top: -10px;
+}
+
+.header_box01 img {
+    width: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.header_box01 p {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #094e75;
+}
+
+.box01_text {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.header_box02 {
+    margin-top: -8px;
+}
+
+.header_box02_button {
+    background-color: #eeee6a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header_box02_button p {
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header_box02_button a{
+    text-decoration: none; /* 下線を消す */
+    color: inherit; /* 親要素の文字色を継承 */
+}
+
+/* ホバー時のエフェクト */
+.header_box02_button:hover {
+    transform: translateY(2px);
+    background-color: #E8D9AC; /* ホバー時は少し暗く */
+}
+
+/* クリック時のエフェクト */
+.header_box02_button:active {
+    transform: translateY(4px);
+    background-color: #DFD0A3;
+}
+
+/* トップ */
+#top {
+    width: 100%;
+    max-width: 390px;
+    height: 700px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #0c98f6 0%, #063e61 100%);
+    color: #ffffff;
+}
+
+.top_box01{
+    text-align: center;
+    padding-top: 10px;
+}
+
+h1{
+font-size: 28px;
+letter-spacing: -1px;
+line-height: 25px;
+}
+
+.top_box01_text {
+    font-family: "Zen Kurenaido", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    background-image: url('img/top_burasi.png'); /* 黄色いブラシ線の画像 */
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 110% 10px; /* 線の高さを調整 */
+    padding-bottom: 4px; /* テキストと線の間隔 */
+}
+
+/* 100へ */
+.top_box02 {
+    filter: drop-shadow(7px 7px 0px rgba(7, 1, 39, 0.7));
+    padding-top: 19px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+/* セミナー概要 */
+.top_box03 {
+    text-align: center;
+}
+
+.top_box03_p_01 {
+    font-size: 20px;
+    font-weight: 100;
+    padding-bottom: 5px;
+}
+
+.wed{
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+/* 出版記念セミナー */
+.top_box03_title {
+background-color: #063e61;
+width: 240px;
+margin: 0 auto; /* 中央寄せ */
+padding-bottom: 4px;
+}
+
+.top_box03_title p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+/* チームで取り組む！ */
+.top_box03_text01 {
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: 200;
+}
+
+.top_box03_text02 {
+    font-size: 11px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+
+.top_box03_text03 {
+    font-size: 16px;
+    font-weight: 200;
+    padding-bottom: 5px;
+}
+
+.tax{
+    font-size: 10px;
+}
+
+.top_box03_text04{
+    font-size: 16px;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+
+.post{
+    font-size: 10px;
+}
+
+.top_box04 {
+    position: relative; /* 子要素の配置の基準点となる */
+}
+
+.capacity {
+    position: absolute;
+    top: -20px; /* 上部への配置調整 */
+    right: 20px; /* 右側への配置調整 */
+    background-color: #eeee6a; /* 黄色の背景 */
+    width: 80px; /* 円の大きさ */
+    height: 80px; /* 円の大きさ */
+    border-radius: 50%; /* 円形にする */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* 動画より前面に表示 */
+}
+
+.capacity01 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.capacity02 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 1;
+}
+
+.capacity03 {
+    font-size: 14px;
+    color: #333333;
+}
+
+
+/* 動画 */
+video {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+/* 書籍紹介 */
+#newbook {
+    width: 100%;
+    max-width: 390px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden; /* はみ出た部分を隠す */
+}
+
+.date {
+    width: 120px;
+    height: 120px;
+    background-color: #063e61;
+    border: 2px solid #eeee6a; /* 黄色の線 */
+    border-radius: 50%; /* 円形にする */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* 位置調整のため追加 */
+    left: -7px; /* 左に少しはみ出す */
+    margin-top: 20px; /* 上部の余白調整 */
+}
+
+
+.date01 {
+    color: #eeee6a;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.date01_text {
+    color: #eeee6a;
+    font-size: 10px;
+    margin-left: 2px;
+}
+
+.date02 {
+    color: #eeee6a;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.date02_text {
+    font-size: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.date03 {
+    color: #eeee6a;
+    font-size: 23px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+/* NewBook */
+
+.newbook_box01 {
+    display: flex;
+}
+
+.newbook_box01_title01 {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: rgb(196, 230, 255);
+    text-align: right;
+    margin-top: -140px;
+    animation: slideInRight 2s ease-out forwards; /* アニメーションを追加 */
+    opacity: 0; /* 初期状態は非表示 */
+}
+
+/* スライドインのアニメーションを定義 */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100px); /* 右から */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* 元の位置へ */
+        opacity: 1;
+    }
+}
+
+.newbook_box02 {
+text-align: right;
+padding-right: 10px; /* 右の余白を追加 */
+}
+
+.newbook_box02_title02 {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    color: #094e75;
+}
+
+.newbook_box02_text {
+    font-size: 11px;
+    margin-top: 30px;
+    letter-spacing: 0px;
+    line-height: 20px;
+}
+
+.newbook_box02_text02 {
+    font-size: 13px;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.newbook_box02_text03 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+.newbook_box02_text03 span {
+    font-size: 13px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.newbook_box03 img {
+    width: 45%; /* 画像サイズを大きく */
+    height: auto;
+    transform: rotate(-7deg); /* 反時計回りに15度傾ける */
+    transition: transform 0.3s ease; /* アニメーション効果（オプション） */
+    margin-top: -190px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+}
+
+/* ホバー効果を付けたい場合（オプション） */
+.newbook_box03 img:hover {
+    transform: rotate(-12deg) scale(1.05); /* ホバー時に少し拡大 */
+}
+
+.newbook_box03{
+    background-color: rgb(242, 210, 210);
+    width: 370px; /* 幅を指定 */
+    height: 140px; /* 高さを指定 */
+    margin: 0 auto; /* 水平方向の中央配置 */
+    position: relative;
+}
+
+.newbook_box03_01{
+    color: #ff1c1c;
+}
+
+.newbook_box03_01_text01 {
+    font-size: 22px;
+    margin-top: -20px;
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+.newbook_box03_01_text02_box {
+    margin-top: -40px;
+}
+
+.newbook_box03_01_text02 {
+    position: relative;
+    display: inline-block;
+    padding: 8px 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    font-size: 10px;
+    margin-left: 170px;
+    margin-top: -50px; /* -30pxから-50pxに変更してより上に移動 */
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* 吹き出しの三角形部分はそのまま */
+.newbook_box03_01_text02:before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: -15px;
+    border: 8px solid transparent;
+    border-top: 10px solid #ffffff;
+}
+
+.newbook_box03_01_text03 {
+    font-size: 53px;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    
+
+}
+
+/* 講師の紹介 */
+#instructor {
+    width: 100%;
+    max-width: 390px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden; /* はみ出た部分を隠す */
+}
+
+.instructor_title01 {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: rgb(196, 230, 255);
+    text-align: left;
+    margin-top: 0px;
+    animation: slideInLeft 2s ease-out forwards; /* アニメーションを変更 */
+    opacity: 0; /* 初期状態は非表示 */
+}
+
+/* 左からスライドインするアニメーションを定義 */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100px); /* 左から */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* 元の位置へ */
+        opacity: 1;
+    }
+}
+
+.instructor_title02 {
+   text-align: left;
+   padding-left: 10px; /* 左の余白を追加 */
+}
+
+.instructor_text01 {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    color: #094e75;
+    padding-bottom: 10px;
+}
+
+.instructor_text01_01{
+    font-size: 12px;
+    letter-spacing: 0px;
+    margin-left: 3px;
+}
+
+.instructor_text02 {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    color: #094e75;
+}
+
+.instructor_text03 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding-left: 10px; /* 左の余白を追加 */
+    padding-bottom: 20px;
+}
+
+ /* セミナーへの想いを見るボタン */
+ .custom-button {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, #5db5ea, #245f91);
+    color: white;
+    padding: 20px 30px;
+    border: 3px solid white;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer; /* カーソルをポインターに変更 */
+    box-shadow: inset 0 0 0 2px #ffffff;
+    z-index: 10; /* 前面に表示 */
+}
+
+.custom-button .arrow {
+    display: inline-block;
+    margin-left: 15px;
+    border-bottom: 2px solid white;
+    width: 60px;
+    position: relative;
+    vertical-align: middle;
+    margin-bottom: 5px; /* さらに下方向に調整 */
+}
+
+
+
+.custom-button .arrow::after {
+    content: ">";
+    position: absolute;
+    right: -4px;
+    top: -13px; /* 矢印の位置をさらに上に調整 */
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1; /* 追加：行の高さを調整 */
+}
+
+.speech-image {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    width: 60px;
+    height: auto;
+}
+
+ /* 萱野美帆先生画像データ */
+ .message_img {
+    width: 50%;
+    padding-left: 220px;
+    margin-top: -150px;
+    position: relative; /* 追加 */
+    z-index: 1; /* 画像を背景の後ろに */
+}
+
+/* アコーディオンコンテナ設定 */
+.accordion-content {
+    position: fixed;
+     /* 最大高さを設定（必要に応じて調整） */
+     max-height: 400px; /* 必要に応じて調整 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+    width: 300px;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background-image: 
+        linear-gradient(90deg, rgba(173, 216, 230, 0.5) 1px, transparent 1px), /* 縦の線 */
+        linear-gradient(180deg, rgba(173, 216, 230, 0.5) 1px, transparent 1px); /* 横の線 */
+    background-size: 7px 7px; /* チェックのサイズを指定 */
+    overflow-y: auto; /* 縦方向のスクロールを可能にする */
+    
+}
+
+/* 表示状態 */
+.accordion-content.open {
+    display: block;
+}
+
+.accordion-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 999;
+  display: none;
+}
+
+.accordion-overlay.active {
+  display: block;
+}
+
+/* アコーディオンクローズボタン */
+.close-button {
+    position: absolute; /* 絶対位置に設定 */
+    top: 20px; /* 上からの距離 */
+    right: 20px; /* 右からの距離 */
+    background-color: black; /* 背景色を黒に設定 */
+    color: white; /* テキストの色を白に設定 */
+    border: none; /* 枠線を消す */
+    border-radius: 5px; /* 角を丸くする */
+    padding: 5px 10px; /* 内側の余白 */
+    cursor: pointer; /* カーソルをポインターに変更 */
+    font-size: 16px; /* フォントサイズを調整 */
+    font-weight: 100;
+    z-index: 1001; /* アコーディオンの内容の上に表示 */
+}
+
+.close-button:hover {
+    background-color: #0026ff; /* ホバー時の背景色を変更 */
+}
+
+
+/* 親要素 */
+.accordion-container {
+    position: relative;
+    overflow: visible;
+}
+
+.image-container {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向に中央揃え */
+}
+
+.speech-image {
+    max-width: 100%; /* 画像の最大幅を100%に設定 */
+    height: auto; /* 高さを自動調整 */
+}
+
+.accordion-content_text {
+    font-size: 18px;
+    font-family: "Zen Kurenaido", sans-serif;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: 2px;
+    color: #063e61;
+    padding-bottom: 25px;
+}
+
+
+
+ /* アコーディオン(申し込み)ボタン */
+ .accordion-button {
+    display: flex; /* フレックスボックスで横並びに */
+    align-items: center; /* 縦方向の中央揃え */
+    background-color: #ffff00; /* 背景を黄色に */
+    color: #063e61; /* テキストの色をネイビーに */
+    padding: 10px 15px; /* ボタンの内側の余白を調整 */
+    border-radius: 50px; /* 角を丸く */
+    text-decoration: none; /* 下線を消す */
+    transition: background 0.3s ease; /* アニメーションのトランジション */
+    width: 280px; /* 横幅を狭める（必要に応じて調整） */
+}
+
+.accordion-button p {
+    font-size: 24px; /* フォントサイズを調整（必要に応じて変更） */
+    font-weight: 900;
+    letter-spacing: 0px;
+    margin: 0; /* デフォルトのマージンをリセット */
+    padding-left: 23px;
+
+}
+
+.accordion-button:hover {
+    background-color: #f0e539;
+    transform: scale(1.05);
+  }
+  
+
+  /* セミナーのポイント */
+  #point {
+    width: 100%;
+    max-width: 390px;
+    height: 1200px;
+    background: linear-gradient(135deg, #0c98f6 0%, #063e61 100%);
+    color: #ffffff;
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% 100%);
+    position: relative;
+    z-index: 2; /* 背景を前面に */
+    margin-top: -100px;
+}
+
+.point_box01{
+    padding-top: 120px;
+}
+
+.point_box01 img,
+.point_box02 img,
+.point_box03 img {
+    display: block; /* ブロック要素にする */
+    margin-left: auto; /* 左のマージンを自動にして右寄せ */
+    margin-right: 30px; /* 右に20pxの余白を追加 */
+    margin-top: 30px;
+    height: auto; /* 高さを自動調整 */
+    max-width: 100%; /* 幅を親要素に合わせる */
+    opacity: 0; /* 初期状態は透明 */
+    transform: scale(0.8); /* 初期状態で少し小さく */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* アニメーションのトランジション */
+}
+
+.point_box01 img.visible,
+.point_box02 img.visible,
+.point_box03 img.visible {
+    opacity: 1; /* 不透明 */
+    transform: scale(1); /* 元のサイズに戻る */
+}
+
+
+.point_title{
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 600;position: relative; /* 相対位置を設定 */
+    padding-bottom: 5px; /* ボーダーとテキストの間隔 */
+}
+
+.point_title::after {
+    content: '';
+    position: absolute;
+    left: 0; /* 左寄せ */
+    bottom: 0; /* テキストの下に配置 */
+    width: 60%; /* ボーダーの長さを調整 */
+    height: 1.5px; /* ボーダーの太さ */
+    background-color: #ffffff; /* ボーダーの色 */
+}
+
+.point_number{
+    font-size: 50px;
+    margin-left: 5px;
+}
+
+.point_text{
+    padding-left: 27px;
+    padding-top: 15px;
+    color: #ffff00;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.point_box04 {
+    display: flex; /* フレックスボックスで横並びに */
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center; /* 垂直方向の中央揃え */
+    margin: 20px 0; /* 上下の余白を追加（必要に応じて調整） */
+    padding-top: 30px;
+}
+
+.point_button {
+    text-align: center; /* ボタンを中央寄せ */
+}
+
+
+  .point-button {
+    display: flex; /* フレックスボックスで横並びに */
+    align-items: center; /* 縦方向の中央揃え */
+    background-color: #ffff00; /* 背景を黄色に */
+    color: #063e61; /* テキストの色をネイビーに */
+    padding: 10px 15px; /* ボタンの内側の余白を調整 */
+    border-radius: 50px; /* 角を丸く */
+    text-decoration: none; /* 下線を消す */
+    transition: background 0.3s ease; /* アニメーションのトランジション */
+    width: 300px; /* 横幅を狭める（必要に応じて調整） */
+}
+
+.point-button p {
+    font-size: 24px; /* フォントサイズを調整（必要に応じて変更） */
+    font-weight: 900;
+    letter-spacing: 0px;
+    margin: 0; /* デフォルトのマージンをリセット */
+    padding-left: 23px;
+
+}
+
+  .point-button:hover {
+    background-color: #f0e539;
+    transform: scale(1.05);
+  }
+  
+  .point-button .arrow {
+    margin-left: 10px;
+    font-size: 36px;
+  }
+
+  /* お悩み事例 */
+  #solution{
+    width: 100%;
+    max-width: 390px;
+    height: 610px;
+    background-color: #ffffff;
+  }
+
+  
+  .solution_title {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: rgb(196, 230, 255);
+    text-align: left;
+    margin-top: 10px;
+}
+
+.solution_title01{
+    font-size: 25px;
+    font-weight: 900;
+    color: #333333;
+    margin-top: -14px;
+    letter-spacing: -1px;
+}
+
+
+.section_box01 {
+    background-color: rgb(196, 230, 255); /* 背景色 */
+    width: 350px; /* 幅を指定 */
+    height: 90px; /* 高さを指定 */
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center; /* 垂直方向の中央揃え */
+    text-align: center; /* テキストを中央寄せ */
+}
+
+.section_box01 p {
+    color: #245f91; /* テキストの色 */
+    letter-spacing: -1px;
+    font-size: 20px;
+    font-weight: 800; /* 太字 */
+    margin: 0; /* デフォルトのマージンをリセット */
+}
+
+.section_box02 {
+    background-color: rgb(196, 230, 255); /* 背景色 */
+    width: 350px; /* 幅を指定 */
+    height: 90px; /* 高さを指定 */
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center; /* 垂直方向の中央揃え */
+    text-align: center; /* テキストを中央寄せ */
+}
+
+.section_box02 p {
+    color: #245f91; /* テキストの色 */
+    font-weight: 800; /* 太字 */
+    letter-spacing: -1px;
+    font-size: 20px;
+    margin: 0; /* デフォルトのマージンをリセット */
+}
+
+.section_box03 {
+    background-color: rgb(196, 230, 255); /* 背景色 */
+    width: 350px; /* 幅を指定 */
+    height: 90px; /* 高さを指定 */
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center; /* 垂直方向の中央揃え */
+    text-align: center; /* テキストを中央寄せ */
+}
+
+.section_box03 p {
+    color: #245f91; /* テキストの色 */
+    font-weight: 800; /* 太字 */
+    letter-spacing: 0px;
+    font-size: 20px;
+    margin: 0; /* デフォルトのマージンをリセット */
+}
+
+.container { /* 親要素のスタイル */
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center; /* 垂直方向の中央寄せ */
+    flex-direction: column; /* 縦に並べる */
+    height: 100vh; /* ビューポートの高さを100%に設定 */
+    margin-top: -170px;
+}
+
+.section_box01, .section_box02, .section_box03 {
+    margin: 15px; /* ボックス間のスペース */
+    opacity: 0; /* 初期状態は透明 */
+    transform: translateX(100px); /* 右からスライドイン */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* アニメーションの設定 */
+}
+
+.section_box01.visible, .section_box02.visible, .section_box03.visible {
+    opacity: 1; /* 表示状態 */
+    transform: translateX(0); /* 元の位置に戻す */
+}
+
+
+.section_box04{
+    margin-top: -150px;
+    display: flex;
+    padding-left: 7px;
+}
+
+.section_box04_text01 {
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 28px;
+}
+
+.section_box04_text02 {
+    background: linear-gradient(135deg, #0c98f6 0%, #063e61 100%); /* グラデーションカラーを設定 */
+    -webkit-background-clip: text; /* テキストにグラデーションを適用 */
+    -webkit-text-fill-color: transparent; /* テキストの色を透明にしてグラデーションを見せる */
+    font-size: 67px; /* フォントサイズの例 */
+    font-weight: 1000; /* 太字の例 */
+    text-align: center; /* テキストを中央寄せ */
+    margin-left: 2px;
+    margin-top: -25px;
+    letter-spacing: -3px;
+}
+
+/* セミナー概要 */
+#guide {
+    width: 100%;
+    max-width: 390px;
+    height: 470px;
+    background: linear-gradient(135deg, #0c98f6 0%, #063e61 100%);
+    color: #ffffff;
+    overflow: hidden; /* はみ出た部分を非表示にする */
+}
+
+.guide_container {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center; /* 垂直方向の中央寄せ */
+    flex-direction: column; /* 縦に並べる（必要に応じて） */
+    height: 20vh; /* ビューポートの高さを100%に設定 */
+    text-align: center; /* テキストを中央寄せ */
+}
+
+.guide_box01{
+    background-color: #042e47;
+    width: 320px;
+    min-height: 40px;
+    border-radius: 20px;
+}
+
+.guide_box01 p {
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.guide_title01 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.guide_title02 {
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.guide_box02{
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.guide_text01 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.guide_text01 span { 
+    padding-left: 8px;
+    font-size: 14px;
+}
+
+.guide_text02 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -3px;
+}
+
+.guide_text03 {
+    font-size: 15px;
+    font-weight: 200;
+    padding-top: 3px;
+}
+
+.guide_text03 span {
+    font-size: 10px;
+    padding-left: 3px;
+}
+
+.guide_text04 {
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.guide_text04 span {
+    font-size: 13px;
+    padding-left: 3px;
+    font-weight: 400;
+}
+
+.capacity_background {
+    background-color: #ffff00; /* 背景色を黄色に設定 */
+    border-radius: 50%; /* 丸くするためにボーダー半径を50%に設定 */
+    width: 90px; /* 幅を指定（必要に応じて調整） */
+    height: 90px; /* 高さを指定（必要に応じて調整） */
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center; /* 垂直方向の中央寄せ */
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 22px;
+}
+
+.guide_box03_img{
+    width: 44%;
+    margin-top: -220px;
+    margin-left: 230px;
+}
+
+/* 受講料無料 */
+#sale {
+    background-color: #ff3a6b;
+    width: 100%;
+    max-width: 390px;
+    height: 290px;
+    color: #ffffff;
+}
+
+.sale_img {
+    margin-top: -120px;
+    padding-left: 30px;
+    transform: rotate(-10deg); /* 画像を-10度傾ける（必要に応じて調整） */
+    transition: transform 0.3s ease; /* スムーズなアニメーションを追加 */
+}
+
+.sale_box01{
+    display: flex;
+}
+
+.clsale_box01_text01 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 30px;
+    letter-spacing: -1px;
+    margin-top: -15px;
+}
+
+.clsale_box01_text02 {
+    font-size: 12px;
+    text-align: center;
+    color: #ff3a6b;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.sale_text01 {
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: -10px;
+}
+
+
+.clsale_box01_text02_box {
+    position: relative; /* 吹き出しの位置を相対的に設定 */
+    display: inline-block; /* 吹き出しのサイズに合わせて調整 */
+    padding-left: 10px;
+    margin-top: -45px;
+}
+
+
+.bubble {
+    background-color: #ffffff; /* 吹き出しの背景色 */
+    border-radius: 10px; /* 吹き出しの角を丸くする */
+    padding: 10px; /* 吹き出しの内側の余白 */
+    text-align: center; /* テキストを中央寄せ */
+    font-size: 12px; /* フォントサイズ */
+    margin: 10px 0; /* 吹き出しの上下のマージン */
+    position: relative; /* 吹き出しの位置を相対的に設定 */
+}
+
+.bubble::after {
+    content: ''; /* 吹き出しの三角形を作成 */
+    position: absolute; /* 吹き出しの位置を絶対的に設定 */
+    top: 100%; /* 吹き出しの下に配置 */
+    left: 50%; /* 吹き出しの中央に配置 */
+    margin-left: -5px; /* 三角形を中央に配置 */
+    border-width: 5px; /* 三角形のサイズ */
+    border-style: solid; /* 三角形のスタイル */
+    border-color: #ffffff transparent transparent transparent; /* 吹き出しの色を下向きに設定 */
+}
+
+.sale_button{
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center; /* 垂直方向の中央寄せ（必要に応じて） */
+    padding-top: 20px;
+}
+
+#footer {
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 縦に並べる */
+    justify-content: center; /* 垂直方向の中央寄せ */
+    align-items: center; /* 水平方向の中央寄せ */
+    background-color: #1a1919;
+    width: 100%;
+    max-width: 390px;
+    height: 100px;
+}
+
+.footer_text {
+    text-align: center;
+    color: #ffffff;
+    font-size: 9px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+.footer_button_box {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center; /* 垂直方向の中央寄せ */
+   padding-top: 20px;
+}
+
+.footer_button {
+    background-color: #ffffff; /* 背景色を白に設定 */
+    width: 200px; /* 幅を指定 */
+    height: 50px; /* 高さを指定 */
+    border-radius: 10px; /* 角を丸くする */
+    text-align: center; /* テキストを中央寄せ */
+    font-size: 16px; /* フォントサイズを調整 */
+    color: #1a1919; /* テキストの色をダークに設定 */
+    font-weight: bold; /* 太字に設定 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 影を追加 */
+    transition: background-color 0.3s, transform 0.3s; /* ホバー時のアニメーション */
+    cursor: pointer; /* カーソルをポインターに変更 */
+}
+
+.topback {
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 12px;
+    
+}
+
+.footer_button:hover {
+    background-color: #f0f0f0; /* ホバー時の背景色 */
+    transform: translateY(-2px); /* ホバー時に少し上に移動 */
+}
+
+.footer_button a {
+    text-decoration: none; /* 下線を消す */
+    color: inherit; /* 親要素の色を継承 */
+}

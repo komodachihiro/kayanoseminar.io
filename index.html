@@ -310,36 +310,22 @@
    });
 
 
-   document.addEventListener('DOMContentLoaded', function() {
-    const accordionButton = document.getElementById('accordion-button');
-    const content = document.getElementById('accordion-content');
+   
 
-    // 初期状態を確認（必要に応じて）
-    content.style.display = 'none'; // 初期状態で非表示に設定
+document.addEventListener('DOMContentLoaded', function() {
+    const openBtn = document.getElementById('accordion-button');
+    const closeBtn = document.getElementById('closeBtn');
+    const accordion = document.getElementById('accordion-content');
 
-    accordionButton.addEventListener('click', function() {
-        if (content.style.display === 'block') {
-            content.style.display = 'none'; // アコーディオンを閉じる
-        } else {
-            content.style.display = 'block'; // アコーディオンを開く
-        }
+    openBtn.addEventListener('click', () => {
+      accordion.classList.add('open');
+      document.body.style.overflow = 'hidden'; // 背景スクロールを停止
     });
-});
 
-
-  const closeBtn = document.getElementById('closeBtn');
-  const accordion = document.getElementById('accordion');
-
-  closeBtn.addEventListener('click', () => {
-    accordion.classList.remove('open'); // 表示用クラスを外す
-    document.body.style.overflow = '';  // スクロール復活（画面固定してた場合）
-  });
-
-  const openBtn = document.getElementById('openAccordion');
-
-  openBtn.addEventListener('click', () => {
-    accordion.classList.add('open');       // 表示
-    document.body.style.overflow = 'hidden'; // 背景スクロール停止
+    closeBtn.addEventListener('click', () => {
+      accordion.classList.remove('open');
+      document.body.style.overflow = ''; // 背景スクロールを復活
+    });
   });
 
 

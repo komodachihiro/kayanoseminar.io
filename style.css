@@ -106,7 +106,7 @@ header {
 #top {
     width: 100%;
     max-width: 390px;
-    height: 700px;
+    height: 720px;
     margin: 0 auto;
     background: linear-gradient(135deg, #0c98f6 0%, #063e61 100%);
     color: #ffffff;
@@ -892,13 +892,12 @@ padding-right: 10px; /* 右の余白を追加 */
     margin: 0; /* デフォルトのマージンをリセット */
 }
 
-.container { /* 親要素のスタイル */
+.solutio_container { /* 親要素のスタイル */
     display: flex; /* フレックスボックスを使用 */
     justify-content: center; /* 水平方向の中央寄せ */
     align-items: center; /* 垂直方向の中央寄せ */
     flex-direction: column; /* 縦に並べる */
-    height: 100vh; /* ビューポートの高さを100%に設定 */
-    margin-top: -170px;
+    margin-top: 10px;
 }
 
 .section_box01, .section_box02, .section_box03 {
@@ -915,7 +914,7 @@ padding-right: 10px; /* 右の余白を追加 */
 
 
 .section_box04{
-    margin-top: -150px;
+    margin-top: 10px;
     display: flex;
     padding-left: 7px;
 }
